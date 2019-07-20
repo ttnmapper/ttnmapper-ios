@@ -1,0 +1,26 @@
+PODS:
+  - Crashlytics (3.9.3):
+    - Fabric (~> 1.7.2)
+  - Fabric (1.7.2)
+  - MQTTClient (0.10.0):
+    - MQTTClient/Core (= 0.10.0)
+  - MQTTClient/Core (0.10.0):
+    - MQTTClient/Manager
+    - MQTTClient/Min
+  - MQTTClient/Manager (0.10.0):
+    - MQTTClient/Min
+  - MQTTClient/Min (0.10.0)
+
+DEPENDENCIES:
+  - Crashlytics (~> 3.9)
+  - Fabric
+  - MQTTClient
+
+SPEC CHECKSUMS:
+  Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
+  Fabric: 9cd6a848efcf1b8b07497e0b6a2e7d336353ba15
+  MQTTClient: f90f4bf4437300b176405e41ad2a162ef28f618a
+
+PODFILE CHECKSUM: bd4da9309094384b4254fe01f78ef684331a4e73
+
+COCOAPODS: 1.1.1

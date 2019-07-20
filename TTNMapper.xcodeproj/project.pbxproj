@@ -1,0 +1,915 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48AD4FFEB6CC96E71DFC8076 /* Pods_TTNMapperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4B127A61FE5593C4BD1125 /* Pods_TTNMapperTests.framework */; };
+		610CD560052149D268AC5604 /* Pods_TTNMapperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C96A8419F7BA6ED96AF565 /* Pods_TTNMapperUITests.framework */; };
+		B07665751B0AED06C42E0FA6 /* Pods_TTNMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41C484B1A17734C360A9188 /* Pods_TTNMapper.framework */; };
+		FD0B531D1D457CC700FAA916 /* FlipAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0B531C1D457CC700FAA916 /* FlipAnimator.swift */; };
+		FD0B531F1D457EA600FAA916 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0B531E1D457EA600FAA916 /* NavigationControllerDelegate.swift */; };
+		FD1CFC541F4F4BDD0087307E /* apple-app-site-association in Resources */ = {isa = PBXBuildFile; fileRef = FD1CFC531F4F4BDD0087307E /* apple-app-site-association */; };
+		FD20F6CF1D0ECE7A00602A45 /* MQTTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD20F6CE1D0ECE7A00602A45 /* MQTTService.swift */; };
+		FD2351031D5E4AB100353202 /* LiveMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2351021D5E4AB100353202 /* LiveMapViewController.swift */; };
+		FD3B8F4A1E16E9FD00CCB90A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3B8F491E16E9FD00CCB90A /* Constants.swift */; };
+		FD4499991F56D5670044F77F /* TTNDiscoveryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4499981F56D5670044F77F /* TTNDiscoveryService.swift */; };
+		FD4760731D2FD7A100F1D59A /* TTNMapperDatapoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4760721D2FD7A100F1D59A /* TTNMapperDatapoint.swift */; };
+		FD6853B31D0DD576006CFBDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6853B21D0DD576006CFBDF /* AppDelegate.swift */; };
+		FD6853B81D0DD576006CFBDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6853B61D0DD576006CFBDF /* Main.storyboard */; };
+		FD6853BA1D0DD576006CFBDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6853B91D0DD576006CFBDF /* Assets.xcassets */; };
+		FD6853BD1D0DD576006CFBDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6853BB1D0DD576006CFBDF /* LaunchScreen.storyboard */; };
+		FD6853C81D0DD576006CFBDF /* TTNMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6853C71D0DD576006CFBDF /* TTNMapperTests.swift */; };
+		FD6853D31D0DD576006CFBDF /* TTNMapperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6853D21D0DD576006CFBDF /* TTNMapperUITests.swift */; };
+		FD71BC2D1D5A708100899429 /* TTNMapperSessionCSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD71BC2C1D5A708100899429 /* TTNMapperSessionCSVParser.swift */; };
+		FD71BC2F1D5A744500899429 /* TTNMapperGatewayCSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD71BC2E1D5A744500899429 /* TTNMapperGatewayCSVParser.swift */; };
+		FD71BC311D5A776100899429 /* CSVLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD71BC301D5A776100899429 /* CSVLine.swift */; };
+		FD82C4681D41590E00DE7797 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD82C4671D41590E00DE7797 /* Util.swift */; };
+		FD82C46A1D455A0200DE7797 /* SessionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD82C4691D455A0200DE7797 /* SessionsTableViewController.swift */; };
+		FD91B1981D49308D006109BF /* TTNMapperGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91B1971D49308D006109BF /* TTNMapperGateway.swift */; };
+		FD94224B1D13D56900E53A66 /* TTNMapperUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD94224A1D13D56900E53A66 /* TTNMapperUploader.swift */; };
+		FD9E98E31E2E239E0058A23B /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E98E21E2E239E0058A23B /* HelpViewController.swift */; };
+		FD9E98E51E2E23EB0058A23B /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E98E41E2E23EB0058A23B /* QRScannerViewController.swift */; };
+		FDA1F6F91E281FAB00CFB0C8 /* TTNMapperConfigurationStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA1F6F81E281FAB00CFB0C8 /* TTNMapperConfigurationStorage.swift */; };
+		FDA54BCC1D53EF85001784DF /* TTNMapperLocalStorageSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA54BCB1D53EF85001784DF /* TTNMapperLocalStorageSession.swift */; };
+		FDA54BCE1D53FA74001784DF /* MQTTDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA54BCD1D53FA74001784DF /* MQTTDataParser.swift */; };
+		FDA54BD01D568DB7001784DF /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA54BCF1D568DB7001784DF /* MulticastDelegate.swift */; };
+		FDB99B1F1E32D3DE0018040D /* MQTTDataParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB99B1E1E32D3DE0018040D /* MQTTDataParserTests.swift */; };
+		FDC3E9E51D0DDA3400C62ACE /* TTNMapperConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC3E9E41D0DDA3400C62ACE /* TTNMapperConfiguration.swift */; };
+		FDC64CD91D5B29E20041F18D /* ArchiveMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC64CD81D5B29E20041F18D /* ArchiveMapViewController.swift */; };
+		FDC64CDB1D5B49CA0041F18D /* BaseMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC64CDA1D5B49CA0041F18D /* BaseMapViewController.swift */; };
+		FDE32F8322E3A5460057F03A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE32F8222E3A5460057F03A /* SettingsViewController.swift */; };
+		FDE32F8522E3A5510057F03A /* TTNHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE32F8422E3A5500057F03A /* TTNHandler.swift */; };
+		FDFA6B7F1D366E960037AB06 /* TTNMapperLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA6B7E1D366E960037AB06 /* TTNMapperLocalStorage.swift */; };
+		FDFA6B811D3672FE0037AB06 /* TTNMapperSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA6B801D3672FE0037AB06 /* TTNMapperSession.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD6853C41D0DD576006CFBDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD6853A71D0DD576006CFBDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD6853AE1D0DD576006CFBDF;
+			remoteInfo = TTNMapper;
+		};
+		FD6853CF1D0DD576006CFBDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD6853A71D0DD576006CFBDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD6853AE1D0DD576006CFBDF;
+			remoteInfo = TTNMapper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CECC0BBEA745526273A3212 /* Pods-TTNMapperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTNMapperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTNMapperTests/Pods-TTNMapperTests.debug.xcconfig"; sourceTree = "<group>"; };
+		15C96A8419F7BA6ED96AF565 /* Pods_TTNMapperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTNMapperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59C58CC6734089C74E8E19DF /* Pods-TTNMapperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTNMapperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTNMapperUITests/Pods-TTNMapperUITests.release.xcconfig"; sourceTree = "<group>"; };
+		727E3756ACD4F14174A35138 /* Pods-TTNMapperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTNMapperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTNMapperTests/Pods-TTNMapperTests.release.xcconfig"; sourceTree = "<group>"; };
+		AA4B127A61FE5593C4BD1125 /* Pods_TTNMapperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTNMapperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE5FBD58CC7AF445AA776CED /* Pods-TTNMapperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTNMapperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTNMapperUITests/Pods-TTNMapperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BDE44CC95B33070AC51D4AFF /* Pods-TTNMapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTNMapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTNMapper/Pods-TTNMapper.debug.xcconfig"; sourceTree = "<group>"; };
+		BEB681AF98915E7334ECD898 /* Pods-TTNMapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTNMapper.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTNMapper/Pods-TTNMapper.release.xcconfig"; sourceTree = "<group>"; };
+		D41C484B1A17734C360A9188 /* Pods_TTNMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTNMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD090B431D36682E00A75A88 /* TTNMapper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TTNMapper.entitlements; sourceTree = "<group>"; };
+		FD0B531C1D457CC700FAA916 /* FlipAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipAnimator.swift; sourceTree = "<group>"; };
+		FD0B531E1D457EA600FAA916 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		FD1CFC531F4F4BDD0087307E /* apple-app-site-association */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "apple-app-site-association"; sourceTree = "<group>"; };
+		FD20F6CE1D0ECE7A00602A45 /* MQTTService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTTService.swift; sourceTree = "<group>"; };
+		FD2351021D5E4AB100353202 /* LiveMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveMapViewController.swift; sourceTree = "<group>"; };
+		FD3B8F491E16E9FD00CCB90A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FD4499981F56D5670044F77F /* TTNDiscoveryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTNDiscoveryService.swift; sourceTree = "<group>"; };
+		FD4760721D2FD7A100F1D59A /* TTNMapperDatapoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTNMapperDatapoint.swift; sourceTree = "<group>"; };
+		FD6853AF1D0DD576006CFBDF /* TTNMapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTNMapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6853B21D0DD576006CFBDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD6853B71D0DD576006CFBDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD6853B91D0DD576006CFBDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD6853BC1D0DD576006CFBDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD6853BE1D0DD576006CFBDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD6853C31D0DD576006CFBDF /* TTNMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTNMapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6853C71D0DD576006CFBDF /* TTNMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTNMapperTests.swift; sourceTree = "<group>"; };
+		FD6853C91D0DD576006CFBDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD6853CE1D0DD576006CFBDF /* TTNMapperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTNMapperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6853D21D0DD576006CFBDF /* TTNMapperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTNMapperUITests.swift; sourceTree = "<group>"; };
+		FD6853D41D0DD576006CFBDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD71BC2C1D5A708100899429 /* TTNMapperSessionCSVParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTNMapperSessionCSVParser.swift; sourceTree = "<group>"; };
+		FD71BC2E1D5A744500899429 /* TTNMapperGatewayCSVParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTNMapperGatewayCSVParser.swift; sourceTree = "<group>"; };
+		FD71BC301D5A776100899429 /* CSVLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVLine.swift; sourceTree = "<group>"; };
+		FD82C4671D41590E00DE7797 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		FD82C4691D455A0200DE7797 /* SessionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionsTableViewController.swift; sourceTree = "<group>"; };
+		FD91B1971D49308D006109BF /* TTNMapperGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTNMapperGateway.swift; sourceTree = "<group>"; };
+		FD94224A1D13D56900E53A66 /* TTNMapperUploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTNMapperUploader.swift; sourceTree = "<group>"; };
+		FD9E98E21E2E239E0058A23B /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		FD9E98E41E2E23EB0058A23B /* QRScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
+		FDA1F6F81E281FAB00CFB0C8 /* TTNMapperConfigurationStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTNMapperConfigurationStorage.swift; sourceTree = "<group>"; };
+		FDA54BCB1D53EF85001784DF /* TTNMapperLocalStorageSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTNMapperLocalStorageSession.swift; sourceTree = "<group>"; };
+		FDA54BCD1D53FA74001784DF /* MQTTDataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTTDataParser.swift; sourceTree = "<group>"; };
+		FDA54BCF1D568DB7001784DF /* MulticastDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
+		FDA63EBD1D514573004C6205 /* TTNMapper-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TTNMapper-Bridging-Header.h"; sourceTree = "<group>"; };
+		FDB99B1E1E32D3DE0018040D /* MQTTDataParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTTDataParserTests.swift; sourceTree = "<group>"; };
+		FDC3E9E41D0DDA3400C62ACE /* TTNMapperConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTNMapperConfiguration.swift; sourceTree = "<group>"; };
+		FDC64CD81D5B29E20041F18D /* ArchiveMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiveMapViewController.swift; sourceTree = "<group>"; };
+		FDC64CDA1D5B49CA0041F18D /* BaseMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMapViewController.swift; sourceTree = "<group>"; };
+		FDE32F8222E3A5460057F03A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FDE32F8422E3A5500057F03A /* TTNHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTNHandler.swift; sourceTree = "<group>"; };
+		FDFA6B7E1D366E960037AB06 /* TTNMapperLocalStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTNMapperLocalStorage.swift; sourceTree = "<group>"; };
+		FDFA6B801D3672FE0037AB06 /* TTNMapperSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTNMapperSession.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD6853AC1D0DD576006CFBDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B07665751B0AED06C42E0FA6 /* Pods_TTNMapper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6853C01D0DD576006CFBDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48AD4FFEB6CC96E71DFC8076 /* Pods_TTNMapperTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6853CB1D0DD576006CFBDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				610CD560052149D268AC5604 /* Pods_TTNMapperUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41077818A786866D833EB476 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDE44CC95B33070AC51D4AFF /* Pods-TTNMapper.debug.xcconfig */,
+				BEB681AF98915E7334ECD898 /* Pods-TTNMapper.release.xcconfig */,
+				0CECC0BBEA745526273A3212 /* Pods-TTNMapperTests.debug.xcconfig */,
+				727E3756ACD4F14174A35138 /* Pods-TTNMapperTests.release.xcconfig */,
+				AE5FBD58CC7AF445AA776CED /* Pods-TTNMapperUITests.debug.xcconfig */,
+				59C58CC6734089C74E8E19DF /* Pods-TTNMapperUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		450C6D69CF21D22823A58F82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D41C484B1A17734C360A9188 /* Pods_TTNMapper.framework */,
+				AA4B127A61FE5593C4BD1125 /* Pods_TTNMapperTests.framework */,
+				15C96A8419F7BA6ED96AF565 /* Pods_TTNMapperUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD1CFC521F4F4BAE0087307E /* well-known */ = {
+			isa = PBXGroup;
+			children = (
+				FD1CFC531F4F4BDD0087307E /* apple-app-site-association */,
+			);
+			name = "well-known";
+			sourceTree = "<group>";
+		};
+		FD6853A61D0DD576006CFBDF = {
+			isa = PBXGroup;
+			children = (
+				FD6853B11D0DD576006CFBDF /* TTNMapper */,
+				FD6853C61D0DD576006CFBDF /* TTNMapperTests */,
+				FD6853D11D0DD576006CFBDF /* TTNMapperUITests */,
+				FD6853B01D0DD576006CFBDF /* Products */,
+				41077818A786866D833EB476 /* Pods */,
+				450C6D69CF21D22823A58F82 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FD6853B01D0DD576006CFBDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD6853AF1D0DD576006CFBDF /* TTNMapper.app */,
+				FD6853C31D0DD576006CFBDF /* TTNMapperTests.xctest */,
+				FD6853CE1D0DD576006CFBDF /* TTNMapperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD6853B11D0DD576006CFBDF /* TTNMapper */ = {
+			isa = PBXGroup;
+			children = (
+				FD1CFC521F4F4BAE0087307E /* well-known */,
+				FDA63EBD1D514573004C6205 /* TTNMapper-Bridging-Header.h */,
+				FD090B431D36682E00A75A88 /* TTNMapper.entitlements */,
+				FD0B531C1D457CC700FAA916 /* FlipAnimator.swift */,
+				FD0B531E1D457EA600FAA916 /* NavigationControllerDelegate.swift */,
+				FD6853B21D0DD576006CFBDF /* AppDelegate.swift */,
+				FDC64CDA1D5B49CA0041F18D /* BaseMapViewController.swift */,
+				FD3B8F491E16E9FD00CCB90A /* Constants.swift */,
+				FD2351021D5E4AB100353202 /* LiveMapViewController.swift */,
+				FDC64CD81D5B29E20041F18D /* ArchiveMapViewController.swift */,
+				FDE32F8222E3A5460057F03A /* SettingsViewController.swift */,
+				FD82C4691D455A0200DE7797 /* SessionsTableViewController.swift */,
+				FD9E98E21E2E239E0058A23B /* HelpViewController.swift */,
+				FD9E98E41E2E23EB0058A23B /* QRScannerViewController.swift */,
+				FD6853B61D0DD576006CFBDF /* Main.storyboard */,
+				FD6853B91D0DD576006CFBDF /* Assets.xcassets */,
+				FD6853BB1D0DD576006CFBDF /* LaunchScreen.storyboard */,
+				FD6853BE1D0DD576006CFBDF /* Info.plist */,
+				FD82C4671D41590E00DE7797 /* Util.swift */,
+				FD71BC301D5A776100899429 /* CSVLine.swift */,
+				FDA54BCF1D568DB7001784DF /* MulticastDelegate.swift */,
+				FD4499981F56D5670044F77F /* TTNDiscoveryService.swift */,
+				FD20F6CE1D0ECE7A00602A45 /* MQTTService.swift */,
+				FDA54BCD1D53FA74001784DF /* MQTTDataParser.swift */,
+				FDE32F8422E3A5500057F03A /* TTNHandler.swift */,
+				FDC3E9E41D0DDA3400C62ACE /* TTNMapperConfiguration.swift */,
+				FDA1F6F81E281FAB00CFB0C8 /* TTNMapperConfigurationStorage.swift */,
+				FDFA6B801D3672FE0037AB06 /* TTNMapperSession.swift */,
+				FD4760721D2FD7A100F1D59A /* TTNMapperDatapoint.swift */,
+				FD91B1971D49308D006109BF /* TTNMapperGateway.swift */,
+				FD94224A1D13D56900E53A66 /* TTNMapperUploader.swift */,
+				FDFA6B7E1D366E960037AB06 /* TTNMapperLocalStorage.swift */,
+				FDA54BCB1D53EF85001784DF /* TTNMapperLocalStorageSession.swift */,
+				FD71BC2C1D5A708100899429 /* TTNMapperSessionCSVParser.swift */,
+				FD71BC2E1D5A744500899429 /* TTNMapperGatewayCSVParser.swift */,
+			);
+			path = TTNMapper;
+			sourceTree = "<group>";
+		};
+		FD6853C61D0DD576006CFBDF /* TTNMapperTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDB99B1E1E32D3DE0018040D /* MQTTDataParserTests.swift */,
+				FD6853C71D0DD576006CFBDF /* TTNMapperTests.swift */,
+				FD6853C91D0DD576006CFBDF /* Info.plist */,
+			);
+			path = TTNMapperTests;
+			sourceTree = "<group>";
+		};
+		FD6853D11D0DD576006CFBDF /* TTNMapperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD6853D21D0DD576006CFBDF /* TTNMapperUITests.swift */,
+				FD6853D41D0DD576006CFBDF /* Info.plist */,
+			);
+			path = TTNMapperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD6853AE1D0DD576006CFBDF /* TTNMapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD6853D71D0DD576006CFBDF /* Build configuration list for PBXNativeTarget "TTNMapper" */;
+			buildPhases = (
+				E3DD21C7404D776AA6585014 /* [CP] Check Pods Manifest.lock */,
+				FD6853AB1D0DD576006CFBDF /* Sources */,
+				FD6853AC1D0DD576006CFBDF /* Frameworks */,
+				FD6853AD1D0DD576006CFBDF /* Resources */,
+				1A7B63422FBF933E12E7E837 /* [CP] Embed Pods Frameworks */,
+				135043632743B60784D1F7D3 /* [CP] Copy Pods Resources */,
+				FD744CB71E2ED3F800FE4E1F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTNMapper;
+			productName = TTNMapper;
+			productReference = FD6853AF1D0DD576006CFBDF /* TTNMapper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD6853C21D0DD576006CFBDF /* TTNMapperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD6853DA1D0DD576006CFBDF /* Build configuration list for PBXNativeTarget "TTNMapperTests" */;
+			buildPhases = (
+				48EFE641DD81AE2176DD0219 /* [CP] Check Pods Manifest.lock */,
+				FD6853BF1D0DD576006CFBDF /* Sources */,
+				FD6853C01D0DD576006CFBDF /* Frameworks */,
+				FD6853C11D0DD576006CFBDF /* Resources */,
+				CE6ACBBEB0E10F22484742C4 /* [CP] Embed Pods Frameworks */,
+				9174701B35251E1A6CF5710E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD6853C51D0DD576006CFBDF /* PBXTargetDependency */,
+			);
+			name = TTNMapperTests;
+			productName = TTNMapperTests;
+			productReference = FD6853C31D0DD576006CFBDF /* TTNMapperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD6853CD1D0DD576006CFBDF /* TTNMapperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD6853DD1D0DD576006CFBDF /* Build configuration list for PBXNativeTarget "TTNMapperUITests" */;
+			buildPhases = (
+				071C7834C74EE008810C5922 /* [CP] Check Pods Manifest.lock */,
+				FD6853CA1D0DD576006CFBDF /* Sources */,
+				FD6853CB1D0DD576006CFBDF /* Frameworks */,
+				FD6853CC1D0DD576006CFBDF /* Resources */,
+				7A3EAF4AD0B63ADFFEC661F1 /* [CP] Copy Pods Resources */,
+				10FFF73E8A7FB1A41EEA8F98 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD6853D01D0DD576006CFBDF /* PBXTargetDependency */,
+			);
+			name = TTNMapperUITests;
+			productName = TTNMapperUITests;
+			productReference = FD6853CE1D0DD576006CFBDF /* TTNMapperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD6853A71D0DD576006CFBDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Timothy Sealy";
+				TargetAttributes = {
+					FD6853AE1D0DD576006CFBDF = {
+						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					FD6853C21D0DD576006CFBDF = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 93DRRVG35M;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FD6853AE1D0DD576006CFBDF;
+					};
+					FD6853CD1D0DD576006CFBDF = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = M479QVPZW2;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FD6853AE1D0DD576006CFBDF;
+					};
+				};
+			};
+			buildConfigurationList = FD6853AA1D0DD576006CFBDF /* Build configuration list for PBXProject "TTNMapper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD6853A61D0DD576006CFBDF;
+			productRefGroup = FD6853B01D0DD576006CFBDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD6853AE1D0DD576006CFBDF /* TTNMapper */,
+				FD6853C21D0DD576006CFBDF /* TTNMapperTests */,
+				FD6853CD1D0DD576006CFBDF /* TTNMapperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD6853AD1D0DD576006CFBDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6853BD1D0DD576006CFBDF /* LaunchScreen.storyboard in Resources */,
+				FD6853BA1D0DD576006CFBDF /* Assets.xcassets in Resources */,
+				FD1CFC541F4F4BDD0087307E /* apple-app-site-association in Resources */,
+				FD6853B81D0DD576006CFBDF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6853C11D0DD576006CFBDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6853CC1D0DD576006CFBDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		071C7834C74EE008810C5922 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		10FFF73E8A7FB1A41EEA8F98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTNMapperUITests/Pods-TTNMapperUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		135043632743B60784D1F7D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTNMapper/Pods-TTNMapper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A7B63422FBF933E12E7E837 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTNMapper/Pods-TTNMapper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48EFE641DD81AE2176DD0219 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7A3EAF4AD0B63ADFFEC661F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTNMapperUITests/Pods-TTNMapperUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9174701B35251E1A6CF5710E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTNMapperTests/Pods-TTNMapperTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE6ACBBEB0E10F22484742C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTNMapperTests/Pods-TTNMapperTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3DD21C7404D776AA6585014 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD744CB71E2ED3F800FE4E1F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 29785e0d8cb576ea183b398f070921d2eca569de 0045a8418e818055a03e8e44a39920043527f4cb0937feb6d42a671f28c957cf";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD6853AB1D0DD576006CFBDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA1F6F91E281FAB00CFB0C8 /* TTNMapperConfigurationStorage.swift in Sources */,
+				FD3B8F4A1E16E9FD00CCB90A /* Constants.swift in Sources */,
+				FDC3E9E51D0DDA3400C62ACE /* TTNMapperConfiguration.swift in Sources */,
+				FD82C4681D41590E00DE7797 /* Util.swift in Sources */,
+				FD2351031D5E4AB100353202 /* LiveMapViewController.swift in Sources */,
+				FDE32F8522E3A5510057F03A /* TTNHandler.swift in Sources */,
+				FD82C46A1D455A0200DE7797 /* SessionsTableViewController.swift in Sources */,
+				FD91B1981D49308D006109BF /* TTNMapperGateway.swift in Sources */,
+				FD0B531F1D457EA600FAA916 /* NavigationControllerDelegate.swift in Sources */,
+				FDC64CD91D5B29E20041F18D /* ArchiveMapViewController.swift in Sources */,
+				FD6853B31D0DD576006CFBDF /* AppDelegate.swift in Sources */,
+				FD0B531D1D457CC700FAA916 /* FlipAnimator.swift in Sources */,
+				FD71BC2D1D5A708100899429 /* TTNMapperSessionCSVParser.swift in Sources */,
+				FD71BC311D5A776100899429 /* CSVLine.swift in Sources */,
+				FD9E98E51E2E23EB0058A23B /* QRScannerViewController.swift in Sources */,
+				FD9E98E31E2E239E0058A23B /* HelpViewController.swift in Sources */,
+				FD94224B1D13D56900E53A66 /* TTNMapperUploader.swift in Sources */,
+				FDA54BD01D568DB7001784DF /* MulticastDelegate.swift in Sources */,
+				FD4499991F56D5670044F77F /* TTNDiscoveryService.swift in Sources */,
+				FDA54BCE1D53FA74001784DF /* MQTTDataParser.swift in Sources */,
+				FD20F6CF1D0ECE7A00602A45 /* MQTTService.swift in Sources */,
+				FDA54BCC1D53EF85001784DF /* TTNMapperLocalStorageSession.swift in Sources */,
+				FDE32F8322E3A5460057F03A /* SettingsViewController.swift in Sources */,
+				FD71BC2F1D5A744500899429 /* TTNMapperGatewayCSVParser.swift in Sources */,
+				FD4760731D2FD7A100F1D59A /* TTNMapperDatapoint.swift in Sources */,
+				FDFA6B7F1D366E960037AB06 /* TTNMapperLocalStorage.swift in Sources */,
+				FDC64CDB1D5B49CA0041F18D /* BaseMapViewController.swift in Sources */,
+				FDFA6B811D3672FE0037AB06 /* TTNMapperSession.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6853BF1D0DD576006CFBDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB99B1F1E32D3DE0018040D /* MQTTDataParserTests.swift in Sources */,
+				FD6853C81D0DD576006CFBDF /* TTNMapperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6853CA1D0DD576006CFBDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6853D31D0DD576006CFBDF /* TTNMapperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD6853C51D0DD576006CFBDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD6853AE1D0DD576006CFBDF /* TTNMapper */;
+			targetProxy = FD6853C41D0DD576006CFBDF /* PBXContainerItemProxy */;
+		};
+		FD6853D01D0DD576006CFBDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD6853AE1D0DD576006CFBDF /* TTNMapper */;
+			targetProxy = FD6853CF1D0DD576006CFBDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD6853B61D0DD576006CFBDF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD6853B71D0DD576006CFBDF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD6853BB1D0DD576006CFBDF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD6853BC1D0DD576006CFBDF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD6853D51D0DD576006CFBDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Timothy Sealy (RW5372C4WY)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD6853D61D0DD576006CFBDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Timothy Sealy (93DRRVG35M)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD6853D81D0DD576006CFBDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDE44CC95B33070AC51D4AFF /* Pods-TTNMapper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TTNMapper/TTNMapper.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TTNMapper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.ttnmapper.ios.TTNMapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TTNMapper/TTNMapper-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FD6853D91D0DD576006CFBDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEB681AF98915E7334ECD898 /* Pods-TTNMapper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TTNMapper/TTNMapper.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TTNMapper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.ttnmapper.ios.TTNMapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TTNMapper/TTNMapper-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FD6853DB1D0DD576006CFBDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CECC0BBEA745526273A3212 /* Pods-TTNMapperTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 93DRRVG35M;
+				INFOPLIST_FILE = TTNMapperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.ttnmapper.TTNMapperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTNMapper.app/TTNMapper";
+			};
+			name = Debug;
+		};
+		FD6853DC1D0DD576006CFBDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 727E3756ACD4F14174A35138 /* Pods-TTNMapperTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 93DRRVG35M;
+				INFOPLIST_FILE = TTNMapperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.ttnmapper.TTNMapperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTNMapper.app/TTNMapper";
+			};
+			name = Release;
+		};
+		FD6853DE1D0DD576006CFBDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE5FBD58CC7AF445AA776CED /* Pods-TTNMapperUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = TTNMapperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.ttnmapper.TTNMapperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = TTNMapper;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FD6853DF1D0DD576006CFBDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59C58CC6734089C74E8E19DF /* Pods-TTNMapperUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = TTNMapperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.ttnmapper.TTNMapperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = TTNMapper;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD6853AA1D0DD576006CFBDF /* Build configuration list for PBXProject "TTNMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6853D51D0DD576006CFBDF /* Debug */,
+				FD6853D61D0DD576006CFBDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD6853D71D0DD576006CFBDF /* Build configuration list for PBXNativeTarget "TTNMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6853D81D0DD576006CFBDF /* Debug */,
+				FD6853D91D0DD576006CFBDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD6853DA1D0DD576006CFBDF /* Build configuration list for PBXNativeTarget "TTNMapperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6853DB1D0DD576006CFBDF /* Debug */,
+				FD6853DC1D0DD576006CFBDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD6853DD1D0DD576006CFBDF /* Build configuration list for PBXNativeTarget "TTNMapperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6853DE1D0DD576006CFBDF /* Debug */,
+				FD6853DF1D0DD576006CFBDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD6853A71D0DD576006CFBDF /* Project object */;
+}
